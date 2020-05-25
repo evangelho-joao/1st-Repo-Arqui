@@ -29,6 +29,7 @@ table 50100 "Table Reward"
             Caption = 'Last Modified Date';
             DataClassification = ToBeClassified;
         }
+        //asdasdasd
     }
     keys
     {
@@ -59,13 +60,12 @@ table 50100 "Table Reward"
     trigger OnDelete()
 
     begin
-        lastDateModified()
+
     end;
 
     procedure lastDateModified()
 
     begin
-        if "Last Modified Date" = 0D then
-            "Last Modified Date" := Today;
+        "Last Modified Date" := Today;
     end;
 }
